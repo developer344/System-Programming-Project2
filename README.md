@@ -1,13 +1,14 @@
-System Programming - Project 2 - 2021
+# System Programming - Project 2 - 2021
 
-Name: Ioannis
-Surname: Georgopoulos
-sdi:1115201800026
+## Name: Ioannis
+## Surname: Georgopoulos
+## sdi:1115201800026
 
-##           Το readme.txt περιέχει σχόλια όσων αναφορά την αποστολή δεδομένων μέσω pipes           ##
-## καθώς και σχολιασμό πανώ στην λειτουργία των signals τόσο στο travelmonitor όσο και στα monitors ##
+           Το readme.txt περιέχει σχόλια όσων αναφορά την αποστολή δεδομένων μέσω pipes           
+καθώς και σχολιασμό πανώ στην λειτουργία των signals τόσο στο travelmonitor όσο και στα monitors
 
---------------------------------::::Pipes::::--------------------------------
+Pipes:
+======
 
 Αποστολή integers:
 ==================
@@ -26,7 +27,8 @@ sdi:1115201800026
 =====================
 Για την αποστολή βλέπω πόσα byte είναι το bloomfilter και στέλνω όλα τα byte one by one.
 
---------------------------------::::Signals::::--------------------------------
+Signals:
+========
 
 TravelMonitor:
 ==============
@@ -48,9 +50,11 @@ SIGINT,SIGQUIT:
 Όταν σταλούν ένα αυτά τα μυνήματα στο monitor από το travelmonitor τότε αλλάζω το αντίστιχο global flag flag_intsig ή flag_intsig τότε το
 κάθε monitor βλέπει ότι έχουν αλλάξει τα flags και θα δημιουργηθεί το log_file.xxx . Απλά πρέπει να δωθεί κάποια εντολή από το TravelMonitor.
 
---------------------------------:::Μεταγλωτηση και εκτέλεση:::--------------------------------
+Μεταγλωτηση και εκτέλεση:
+=========================
 Η μεταγλώτηση γίνεται με το makeFile
 Η εκτέλεση γίνεται με το ./bin/travelMonitor -m numOfMonitors -b bufferSize -s bloomfiltersize -i inputDirectory
 
 Επιπλέον σχόλια:
+====
 Μερικές φορές μπορεί να χρειάζεται να γινει chmod 777 FiFos
